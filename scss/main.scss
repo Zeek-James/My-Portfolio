@@ -128,34 +128,34 @@ main {
 }
 
 // Contact Page
-  .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 1rem;
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
 
-    div {
-      font-size: 2rem;
-      border: 3px #fff solid;
-      padding: 1.5rem 2.5rem;
-      margin-bottom: 3rem;
-      @include easeOut;
+  div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    @include easeOut;
 
-      &:hover{
-        background: $secondary-color;
-        padding: 0.5rem 11.5rem;
-        border-bottom: 6px $secondary-color solid;
-        border-left: 6px $primary-color solid;
-        border-right: 6px $primary-color solid;
+    &:hover {
+      background: $secondary-color;
+      padding: 0.5rem 4.5rem;
+      border-bottom: 6px $secondary-color solid;
+      border-left: 6px $primary-color solid;
+      border-right: 6px $primary-color solid;
+      color: set-text-color($secondary-color);
+
+      span {
         color: set-text-color($secondary-color);
-        
-        span{
-          color: set-text-color($secondary-color);
-        }
       }
     }
   }
+}
 
 // Button Styles
 .btn {
@@ -173,13 +173,13 @@ main {
 .btn-dark {
   @extend .btn;
   background: darken($primary-color, 50);
-  color: #fff
+  color: #fff;
 }
 
 .btn-light {
   @extend .btn;
   background: lighten($primary-color, 50);
-  color: #333333
+  color: #333333;
 }
 
 #main-footer {
